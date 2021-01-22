@@ -7,6 +7,7 @@
 
 body{
   margin: 0;
+    background-image: url(WebProject\img\Background)
 	padding-top: 85px;
   font-family: 'Arial', sans-serif;
 }
