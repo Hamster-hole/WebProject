@@ -16,14 +16,14 @@
     <header class="mainheader">
         <div class="container">
 
-            <img src="img/logo.jpg" id="logo">
+            <img src="img/logo.png">
 
             <nav class="mainnav">
                 <ul>
                     <li class="active"><a href="#">Серии наборов</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
-                    <li><a href="#">Собери комплект</a></li>
+                    <li><a href="#" class="menuItem">О компании</a></li>
+                    <li><a href="#" class="menuItem">Оставить заявку</a></li>
+                    <li><a href="#" class="menuItem">Собери комплект</a></li>
                     <li><img src="img/cart25.png"> 0</li>
                 </ul>
             </nav>
@@ -36,31 +36,26 @@
 
             <!--НАЧАЛО Секция "Серии наборов"-->
             <section>
-                <h2>дисциплины</h2>
+                <h2>Серии наборов</h2>
 
                 <!--Стреки для листания слайдера-->
+                <img src="img/arrow_right.png" class="slider_arrow_right" id="right">
+                <img src="img/arrow_left.png" class="slider_arrow_left" id="left">
 
                 <!--НАЧАЛО Обертка для слайдов-->
-                <div class="slides">
+                <div class="kit_slides_wrapper">
 
-                    <!-- Первый слайд -->
-                    <div class="item">
-                        <img src="https://s3.tproger.ru/uploads/2020/07/field.jpg">
+                    <!-- НАЧАЛО Слайд №1-->
+                    <div class="kit_slide">
+                        <img src="img/series/series1.jpg">
+                        <div class="info">
+                            <h3>THE LEGO MOVIE</h3>
+                            <p>
+                                Познакомься с наборами из серии THE LEGO® MOVIE 2™, посмотри, как Эммет разворачивает свой новый дом мечты/спасательную ракету, когда Мими Катавасия прибывает на звездолёте.
+                            </p>
+                        </div>
                     </div>
-
-                    <!-- Второй слайд -->
-                    <div class="item">
-                        <img src="https://s3.tproger.ru/uploads/2020/07/rose.jpg">
-                    </div>
-
-                    <!-- Третий слайд -->
-                    <div class="item">
-                        <img src="https://s3.tproger.ru/uploads/2020/07/leaf.jpg">
-                    </div>
-                    <!-- Кнопки-стрелочки -->
-                    <a class="previous" onclick="previousSlide()">&#10094;</a>
-                    <a class="next" onclick="nextSlide()">&#10095;</a>
-
+                    <!-- КОНЕЦ Слайд №1-->
                 </div>
                 <!--КОНЕЦ Обертка для слайдов-->
             </section>
@@ -179,7 +174,7 @@
                 <!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
             </section>
             <!--КОНЕЦ Секция "Собери комплект"-->
-            <script href="scripts/script.js"></script>
+
         </div>
     </main>
 

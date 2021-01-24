@@ -93,9 +93,11 @@ section{
 }
 .mainnav>ul li a:hover{
 	text-decoration: underline;
+    transition: 0.3s;
 }
 .mainnav>ul li.active a{
 	text-decoration: underline;
+        transition: 0.3s;
 	color: #E22122;
 }
 

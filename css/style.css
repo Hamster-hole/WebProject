@@ -65,3 +65,13 @@
         opacity: 1
     }
 }
+body {
+    background-image: url(GitHub\WebProject\img);
+}
+
+
+/* Меню веб сайта */
+.menuItem:hover{
+    color: red;
+    transition: 0.3s;
+}
