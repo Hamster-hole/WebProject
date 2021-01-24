@@ -16,7 +16,7 @@
 	<header class="mainheader">
 		<div class="container">
 
-			<img src="img/logo.jpg" id="logo">
+			<img src="img/logo.png" id="logo">
 
 			<nav class="mainnav">
 				<ul>
@@ -136,36 +136,36 @@
 					<!--КОНЕЦ Товар №1-->
 					<!--НАЧАЛО Товар №2-->
 					<div class="product">
-						<img src="img/goods/2.jpg">
-						<h4>Гоночная машина</h4>
+						<img src="img/goods/2.png">
+						<h4>Spacestation Gaming</h4>
 						<button><img src="img/cart16.png"></button>
 					</div>
 					<!--КОНЕЦ Товар №2-->
 					<!--НАЧАЛО Товар №3-->
 					<div class="product">
-						<img src="img/goods/3.jpg">
-						<h4>Попугай</h4>
+						<img src="img/goods/3.png">
+						<h4>Rogue</h4>
 						<button><img src="img/cart16.png"></button>
 					</div>
 					<!--КОНЕЦ Товар №3-->
 
 					<!--НАЧАЛО Товар №4-->
 					<div class="product">
-						<img src="img/goods/4.jpg">
+						<img src="img/goods/4.png">
 						<h4>Аэропорт</h4>
 						<button><img src="img/cart16.png"></button>
 					</div>
 					<!--КОНЕЦ Товар №4-->
 					<!--НАЧАЛО Товар №5-->
 					<div class="product">
-						<img src="img/goods/5.jpg">
+						<img src="img/goods/5.png">
 						<h4>Вертолет</h4>
 						<button><img src="img/cart16.png"></button>
 					</div>
 					<!--КОНЕЦ Товар №5-->
 					<!--НАЧАЛО Товар №6-->
 					<div class="product">
-						<img src="img/goods/6.jpg">
+						<img src="img/goods/6.png">
 						<h4>Дом (красный)</h4>
 						<button><img src="img/cart16.png"></button>
 					</div>
@@ -208,5 +208,20 @@
 
 
 
+        let allDiv = document.body.querySelectorAll('div');
+		let allLi = document.body.querySelectorAll('li');
+        window.addEventListener('scroll', function() {
+            for (let i = 0; i < allDiv.length; i++) {
+                let info = allDiv[i].getBoundingClientRect();
+                if(info.top < 120 && info.top > 0){
+                    allLi[i].addClass('active');
+					console.log(1);
+                }
+                else {
+					console.log(2);
+                    allLi[i-1].removeClass('active');
+                }
+            }
+        })
 	</script>
 </body></html>
