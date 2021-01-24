@@ -8,3 +8,8 @@ right.addEventListener("click", function(){
 left.addEventListener("click", function(){
        
     });
+
+
+
+
+// Обробоботка информации\

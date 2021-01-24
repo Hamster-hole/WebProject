@@ -7,7 +7,6 @@
 
 body{
   margin: 0;
-    background-image: url(WebProject\img\Background)
 	padding-top: 85px;
   font-family: 'Arial', sans-serif;
 }
@@ -28,7 +27,7 @@ h2:after{
   position: absolute;
   width: 300px;
   height: 3px;
-  background-color: #E22122;
+  background-color: #19383d;
   top: 50px;
   left: 0;
 }
@@ -55,7 +54,7 @@ section{
 }
 
 .mainheader{
-  background-color: #EECB33;
+  background-color: #19383d;
   padding: 15px 0;
 	position: fixed;
 	width: 100%;
@@ -94,6 +93,7 @@ section{
 .mainnav>ul li a:hover{
 	text-decoration: underline;
     transition: 0.3s;
+    color: #E22122;
 }
 .mainnav>ul li.active a{
 	text-decoration: underline;
